@@ -10,4 +10,6 @@ spec:
         - name: "deployment"
           tasks:
             - name: "evaluation"
+              properties:
+                timeframe: "15m"
             - name: "build"
