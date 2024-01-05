@@ -8,6 +8,9 @@ spec:
       test_strategy: "performance"
       sequences:
         - name: "deployment"
+          triggeredAfter: "10m"
+              properties:
+                timeframe: "5m"
           tasks:
             - name: "evaluation"
             - name: "build"
